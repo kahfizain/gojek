@@ -10,7 +10,7 @@ class NewsPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Padding(padding: const EdgeInsets.only(left: 60, right: 20, top: 32),
+        Padding(padding: const EdgeInsets.only(left: 10, right: 20, top: 32),
         child: Column(
           children: [
             // todo info news

@@ -10,7 +10,7 @@ class ItemNews extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(bottom: 24, left: 16, right: 16),
+      padding: const EdgeInsets.only(bottom: 24, left: 15, right: 15),
       child: Container(
         clipBehavior: Clip.hardEdge,
         decoration: BoxDecoration(

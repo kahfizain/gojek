@@ -10,18 +10,21 @@ class ItemInfoNews extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Image.asset(
-          'assets/images/gopaylater.png',
-          height: 14,
-        ),
-        const SizedBox( height: 8,),
-        Text(infoNew.title, style: bold16.copyWith(color: dark1),),
-        const SizedBox(height: 8,),
-        Text(infoNew.description, style: regular14.copyWith(color: dark2),)
-      ],
+    return Padding(
+      padding: const EdgeInsets.only( left: 15, right: 15),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Image.asset(
+            'assets/images/gopaylater.png',
+            height: 14,
+          ),
+          const SizedBox( height: 8,),
+          Text(infoNew.title, style: bold16.copyWith(color: dark1),),
+          const SizedBox(height: 8,),
+          Text(infoNew.description, style: regular14.copyWith(color: dark2),)
+        ],
+      ),
     );
   }
 }
