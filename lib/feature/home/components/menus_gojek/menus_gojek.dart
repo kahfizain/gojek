@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:gojek/datas/data_menu.dart';
-import 'package:gojek/feature/home/menus_gojek/item_menus_gojek.dart';
+import 'package:gojek/feature/home/components/menus_gojek/item_menus_gojek.dart';
 
 class MenusGoJek extends StatelessWidget {
    MenusGoJek({super.key});

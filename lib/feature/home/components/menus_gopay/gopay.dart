@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:gojek/datas/data_menu.dart';
-import 'package:gojek/feature/home/menus_gopay/item_gopay_menu.dart';
+import 'package:gojek/feature/home/components/menus_gopay/item_gopay_menu.dart';
 import 'package:gojek/thema.dart';
 
 import 'gopay_saldo.dart';

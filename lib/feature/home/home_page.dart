@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:gojek/feature/home/goclub/goclube.dart';
-import 'package:gojek/feature/home/menus_gojek/menus_gojek.dart';
-import 'package:gojek/feature/home/menus_gopay/gopay.dart';
-import 'package:gojek/feature/home/search/search.dart';
+import 'package:gojek/feature/home/components/goclub/goclube.dart';
+import 'package:gojek/feature/home/components/menus_gojek/menus_gojek.dart';
+import 'package:gojek/feature/home/components/menus_gopay/gopay.dart';
+import 'package:gojek/feature/home/components/search/search.dart';
+
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -13,7 +14,7 @@ class HomePage extends StatelessWidget {
       body: SingleChildScrollView(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
-            children: [Search(),MenuGoPay(), MenusGoJek(), GoCLube()/* GoCLube(), Akses(), News()*/],
+            children: [Search(),MenuGoPay(), MenusGoJek(), GoCLube()/*, Akses(), News()*/],
           )),
     );
 
