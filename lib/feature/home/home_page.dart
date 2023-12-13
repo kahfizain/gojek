@@ -5,7 +5,6 @@ import 'package:gojek/feature/home/components/menus_gojek/menus_gojek_page.dart'
 import 'package:gojek/feature/home/components/menus_gopay/gopay_page.dart';
 import 'package:gojek/feature/home/components/news/news_page.dart';
 import 'package:gojek/feature/home/components/search/search_page.dart';
-import 'package:gojek/model/news.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -17,7 +16,7 @@ class HomePage extends StatelessWidget {
           child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Search(),
+          SearchHome(),
           MenuGoPayPage(),
           MenusGoJekPage(),
           GoCLubePage(),

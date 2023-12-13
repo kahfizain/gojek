@@ -1,0 +1,36 @@
+import 'package:flutter/material.dart';
+import 'package:gojek/datas/data_history.dart';
+import 'package:gojek/feature/search/components/item/item_history_search.dart';
+import 'package:gojek/thema.dart';
+
+class HistorySearch extends StatelessWidget {
+   const HistorySearch({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(padding: const EdgeInsets.only(left: 15, top: 8, right: 15),
+    child: Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text("Pernah Kamu Cari", style: bold18.copyWith(color: dark1),),
+        const SizedBox(
+          height: 10,
+        ),
+        SizedBox(
+          height: 100,
+          child:  GridView.count(
+            crossAxisCount: 4,
+            childAspectRatio: 2.2,
+            children: [
+              ...listHistory.map((item) => ItemHistorySearch(history: item))
+            ],)
+          ,
+        ),
+
+
+
+      ],
+
+    ),);
+  }
+}

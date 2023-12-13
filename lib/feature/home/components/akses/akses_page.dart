@@ -4,7 +4,7 @@ import 'package:gojek/feature/home/components/akses/item_akases.dart';
 import 'package:gojek/thema.dart';
 
 class AksesPage extends StatelessWidget {
-   AksesPage({super.key});
+   const AksesPage({super.key});
 
   @override
   Widget build(BuildContext context) {
