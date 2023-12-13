@@ -5,8 +5,8 @@ import 'package:gojek/thema.dart';
 
 import 'gopay_saldo.dart';
 
-class MenuGoPay extends StatelessWidget {
-   MenuGoPay({super.key});
+class MenuGoPayPage extends StatelessWidget {
+   MenuGoPayPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -47,7 +47,7 @@ class MenuGoPay extends StatelessWidget {
             const Padding(
                 padding: EdgeInsets.only(left: 8),
                 child: GoPaySaldo()),
-            ...goPayMenu.map((item) => ItemGoPayMenu(dataGojekMenu: item)),
+            ...listGoPayMenu.map((item) => ItemGoPayMenu(dataGojekMenu: item)),
           ],
         ),
       ),

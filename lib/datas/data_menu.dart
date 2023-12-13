@@ -1,13 +1,13 @@
 import 'package:gojek/model/menu_gojek.dart';
 import 'package:gojek/thema.dart';
 
-List<GojekMenu> goPayMenu = [
+List<GojekMenu> listGoPayMenu = [
   GojekMenu(icon: 'pay', title: 'Bayar'),
   GojekMenu(icon: 'topup', title: 'Top Up'),
   GojekMenu(icon: "explore", title: 'Eksplor')
 ];
 
-List<GojekMenu> goMenu = [
+List<GojekMenu> ListGoMenu = [
   GojekMenu(icon: 'goride', title: 'GoRide', color: green2),
   GojekMenu(icon: 'gocar', title: 'GoCar', color: green2),
   GojekMenu(icon: 'gofood', title: 'GoFood', color: red),
