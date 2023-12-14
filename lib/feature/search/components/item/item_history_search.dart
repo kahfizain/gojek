@@ -12,7 +12,7 @@ class ItemHistorySearch extends StatelessWidget {
     return Padding(
         padding: const EdgeInsets.all(2),
         child: Container(
-          padding:const EdgeInsets.only(left: 3, right: 3),
+          padding:const EdgeInsets.only(left: 2, right: 2),
           decoration: BoxDecoration(
               color: dark4,
               borderRadius: BorderRadius.circular(10.0),
@@ -20,7 +20,7 @@ class ItemHistorySearch extends StatelessWidget {
           child: Center(
             child: Text(
               history.historyValue,
-              style: bold16.copyWith(color: green1, fontSize: 12),
+              style: bold16.copyWith(color: green1, fontSize: 11),
             ),
           ),
         ));
