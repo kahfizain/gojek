@@ -13,7 +13,7 @@ class ItemHistoryCategory extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.all(2),
       child: Container(
-          padding: const EdgeInsets.only(left: 1, right: 1),
+          padding: const EdgeInsets.only(left: 2, right: 2),
           decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(10.0),
               border: Border.all(color: const Color(0xFFE8E8E8))),
@@ -24,14 +24,14 @@ class ItemHistoryCategory extends StatelessWidget {
               ),
               SvgPicture.asset(
                 'assets/icons/${history.icon}.svg',
-                height: 20,
+                height: 10,
               ),
               const SizedBox(
                 width: 3,
               ),
               Text(
                 history.historyValue,
-                style: bold16.copyWith(color: dark1, fontSize: 10),
+                style: bold16.copyWith(color: dark1, fontSize: 12),
               ),
             ],
           )),

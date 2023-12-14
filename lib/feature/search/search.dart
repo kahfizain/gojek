@@ -6,38 +6,34 @@ import 'package:gojek/feature/search/components/history_search.dart';
 import 'package:gojek/thema.dart';
 
 class Search extends StatelessWidget {
-
   Search({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-          backgroundColor: Colors.white,
-          elevation: 0,
-          title: Text(
-            "Pencarian",
-            style: bold18.copyWith(color: dark1),
-          )),
-      body: Container(
-        color: Colors.white,
-       child: Column(
-         children: [
-           SearchComponents(),
-           SingleChildScrollView(
-             child: Column(
-               crossAxisAlignment: CrossAxisAlignment.end,
+        appBar: AppBar(
+            backgroundColor: Colors.white,
+            elevation: 0,
+            title: Text(
+              "Pencarian",
+              style: bold18.copyWith(color: dark1),
+            )),
+        body: Container(
+            color: Colors.white,
+            child: SingleChildScrollView(
+              physics: const NeverScrollableScrollPhysics(),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.end,
                 children: [
-                  HistorySearch(title: 'Pernah Kamu cari',listHistory: [...listHistory]),
+                  SearchComponents(),
+                  HistorySearch(
+                      title: 'Pernah Kamu cari', listHistory: [...listHistory]),
                   HistoryCategory(),
-                  HistorySearch(title: 'Pencarian Populer',listHistory: [...listPopulerHistory]),
-
+                  HistorySearch(
+                      title: 'pencarian Populer',
+                      listHistory: [...listPopulerHistory]),
                 ],
-             ),
-           )
-         ],
-       ),
-      )
-    );
+              ),
+            )));
   }
 }

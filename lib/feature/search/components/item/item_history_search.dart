@@ -19,7 +19,7 @@ class ItemHistorySearch extends StatelessWidget {
           child: Center(
             child: Text(
               history.historyValue,
-              style: bold16.copyWith(color: green1, fontSize: 10),
+              style: bold16.copyWith(color: green1, fontSize: 12),
             ),
           ),
         ));
