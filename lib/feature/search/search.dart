@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:gojek/components/search_components.dart';
+import 'package:gojek/feature/search/components/history_category.dart';
 import 'package:gojek/feature/search/components/history_search.dart';
 import 'package:gojek/thema.dart';
 
@@ -26,6 +27,7 @@ class Search extends StatelessWidget {
                crossAxisAlignment: CrossAxisAlignment.end,
                 children: [
                   HistorySearch(),
+                  HistoryCategory(),
                 ],
              ),
            )

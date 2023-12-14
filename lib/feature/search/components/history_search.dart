@@ -17,18 +17,15 @@ class HistorySearch extends StatelessWidget {
           height: 10,
         ),
         SizedBox(
-          height: 100,
+          height: 130,
           child:  GridView.count(
             crossAxisCount: 4,
             childAspectRatio: 2.2,
             children: [
               ...listHistory.map((item) => ItemHistorySearch(history: item))
             ],)
-          ,
+
         ),
-
-
-
       ],
 
     ),);
