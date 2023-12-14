@@ -11,7 +11,9 @@ class MenusGoJekPage extends StatelessWidget {
       padding: const EdgeInsets.only(left: 27, right: 27, top: 32),
       child: SizedBox(
         height: 190,
-        child: GridView.count(crossAxisCount: 4, mainAxisSpacing: 8, children: [
+        child: GridView.count(
+          physics: const NeverScrollableScrollPhysics(),
+          crossAxisCount: 4, mainAxisSpacing: 8, children: [
           ...ListGoMenu.map((item) => ItemMenuGojek(gojekMenu: item))
         ],)
       )

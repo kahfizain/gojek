@@ -23,6 +23,7 @@ class HistoryCategory extends StatelessWidget {
           SizedBox(
             height: 130,
             child: GridView.count(
+              physics: const NeverScrollableScrollPhysics(),
               crossAxisCount: 4,
               childAspectRatio: 2.2,
               children: [

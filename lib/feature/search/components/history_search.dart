@@ -15,13 +15,14 @@ class HistorySearch extends StatelessWidget {
     child: Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text("Pernah Kamu Cari", style: bold18.copyWith(color: dark1),),
+        Text(title, style: bold18.copyWith(color: dark1),),
         const SizedBox(
           height: 10,
         ),
         SizedBox(
           height: 130,
           child:  GridView.count(
+            physics: const NeverScrollableScrollPhysics(),
             crossAxisCount: 4,
             childAspectRatio: 2.2,
             children: [
