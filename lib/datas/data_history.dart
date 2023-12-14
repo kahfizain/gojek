@@ -18,3 +18,13 @@ List<History> listCategoryHistory = [
   History(icon: 'ic_tujuan',historyValue : 'Bantuan'),
 
 ];
+
+List<History> listPopulerHistory = [
+  History(icon: '', historyValue: 'Salad buah',),
+  History(icon: '', historyValue: 'Kulo'),
+  History(icon: '', historyValue: 'salad'),
+  History(icon: '', historyValue: 'martabak Padang'),
+  History(icon: '', historyValue: 'chat time '),
+  History(icon: '', historyValue : 'bubur ayam'),
+
+];

@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:gojek/datas/data_history.dart';
 import 'package:gojek/feature/search/components/item/item_history_search.dart';
+import 'package:gojek/model/history.dart';
 import 'package:gojek/thema.dart';
 
 class HistorySearch extends StatelessWidget {
-   const HistorySearch({super.key});
+  final String title;
+  final List<History> listHistory ;
+    HistorySearch({super.key, required this.title, required this.listHistory});
 
   @override
   Widget build(BuildContext context) {

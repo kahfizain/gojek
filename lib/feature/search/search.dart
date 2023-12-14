@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:gojek/components/search_components.dart';
+import 'package:gojek/datas/data_history.dart';
 import 'package:gojek/feature/search/components/history_category.dart';
 import 'package:gojek/feature/search/components/history_search.dart';
 import 'package:gojek/thema.dart';
 
 class Search extends StatelessWidget {
+
   Search({super.key});
 
   @override
@@ -22,12 +24,14 @@ class Search extends StatelessWidget {
        child: Column(
          children: [
            SearchComponents(),
-           const SingleChildScrollView(
+           SingleChildScrollView(
              child: Column(
                crossAxisAlignment: CrossAxisAlignment.end,
                 children: [
-                  HistorySearch(),
+                  HistorySearch(title: 'Pernah Kamu cari',listHistory: [...listHistory]),
                   HistoryCategory(),
+                  HistorySearch(title: 'Pencarian Populer',listHistory: [...listPopulerHistory]),
+
                 ],
              ),
            )
