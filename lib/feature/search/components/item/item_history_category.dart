@@ -20,11 +20,14 @@ class ItemHistoryCategory extends StatelessWidget {
           child: Row(
             children: [
               const SizedBox(
-                height: 10,
+                width: 10,
               ),
               SvgPicture.asset(
                 'assets/icons/${history.icon}.svg',
                 height: 20,
+              ),
+              const SizedBox(
+                width: 3,
               ),
               Text(
                 history.historyValue,
