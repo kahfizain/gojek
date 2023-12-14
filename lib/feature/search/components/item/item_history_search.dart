@@ -12,7 +12,6 @@ class ItemHistorySearch extends StatelessWidget {
     return Padding(
         padding: const EdgeInsets.all(2),
         child: Container(
-          padding:const EdgeInsets.only(left: 1, right: 1),
           decoration: BoxDecoration(
               color: dark4,
               borderRadius: BorderRadius.circular(10.0),
